@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Download, Menu, X, Github } from "lucide-react"
+import { Menu, X, Github, Mail, Linkedin } from "lucide-react"
 import Image from "next/image"
 
 export default function Home() {
@@ -11,7 +11,8 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "work"]
+      // Incluído 'contact' na lista de seções
+      const sections = ["home", "about", "work", "contact"]
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -66,13 +67,14 @@ export default function Home() {
             >
               Projetos
             </button>
-            <Button asChild size="sm">
-              <a href="https://drive.google.com/file/d/1fFDzpS8RtaAf6Bj6goG7I3XrjRsRvxk8/view?usp=sharing"
-                target="_blank" 
-                rel="noopener noreferrer">
-                Curriculo
-              </a>
-            </Button>
+            {/* Adicionado link para a nova seção de contato */}
+            <button
+              onClick={() => scrollToSection("contact")}
+              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "contact" ? "text-primary" : "text-muted-foreground"}`}
+            >
+              Contato
+            </button>
+            {/* Botão de Curriculo removido da navegação desktop */}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -93,13 +95,11 @@ export default function Home() {
             <button onClick={() => scrollToSection("work")} className="text-sm font-medium py-2 hover:text-primary">
               Projetos
             </button>
-            <Button asChild size="sm" className="w-full">
-              <a href="https://drive.google.com/file/d/1fFDzpS8RtaAf6Bj6goG7I3XrjRsRvxk8/view?usp=sharing"
-                target="_blank" 
-                rel="noopener noreferrer">
-                Curriculo
-              </a>
-            </Button>
+            {/* Adicionado link para a nova seção de contato no mobile */}
+            <button onClick={() => scrollToSection("contact")} className="text-sm font-medium py-2 hover:text-primary">
+              Contato
+            </button>
+            {/* Botão de Curriculo removido da navegação mobile */}
           </div>
         )}
       </header>
@@ -196,9 +196,11 @@ export default function Home() {
 
                 <div className="flex justify-center pt-6">
                   <Button asChild>
-                    <a href="https://drive.google.com/file/d/1fFDzpS8RtaAf6Bj6goG7I3XrjRsRvxk8/view?usp=sharing"
-                      target="_blank" 
-                      rel="noopener noreferrer">
+                    <a
+                      href="https://drive.google.com/file/d/1fFDzpS8RtaAf6Bj6goG7I3XrjRsRvxk8/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Download Curriculo Completo
                     </a>
                   </Button>
@@ -251,7 +253,6 @@ export default function Home() {
                       Ver no GitHub
                     </a>
                   </Button>
-
                 </div>
 
                 {/* Projeto 2 */}
@@ -272,7 +273,9 @@ export default function Home() {
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Machine Learning</span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                        Machine Learning
+                      </span>
                     </div>
                   </div>
                   <Button asChild size="sm" className="w-full">
@@ -308,11 +311,7 @@ export default function Home() {
                     </div>
                   </div>
                   <Button asChild size="sm" className="w-full">
-                    <a
-                      href="https://github.com/pedrocobalquini/Custo-Medico"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href="https://github.com/pedrocobalquini/Custo-Medico" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       Ver no GitHub
                     </a>
@@ -336,7 +335,9 @@ export default function Home() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Machine Learning</span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                        Machine Learning
+                      </span>
                     </div>
                   </div>
                   <Button asChild size="sm" className="w-full">
@@ -350,6 +351,40 @@ export default function Home() {
                     </a>
                   </Button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Nova Seção de Contato */}
+        <section id="contact" className="py-20 bg-secondary/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              {/* Título alterado para corresponder ao estilo de "Meus Projetos" */}
+              <h2 className="text-3xl font-bold mb-4">Vamos Trabalhar Juntos</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Estou sempre em busca de novos desafios e oportunidades para aplicar minhas habilidades em ciência de
+                dados. Entre em contato para discutirmos como posso contribuir para o seu projeto!
+              </p>
+              <div className="inline-flex flex-wrap justify-center gap-4 pt-6">
+                <Button asChild>
+                  <a href="mailto:pedrohernandez1903@gmail.com">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Enviar Email
+                  </a>
+                </Button>
+                <Button asChild variant="outline">
+                  <a href="https://github.com/pedrocobalquini" target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    GitHub
+                  </a>
+                </Button>
+                <Button asChild variant="outline">
+                  <a href="https://www.linkedin.com/in/pedrocobalquini/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="mr-2 h-4 w-4" />
+                    LinkedIn
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
