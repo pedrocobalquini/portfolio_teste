@@ -147,9 +147,10 @@ export default function Home() {
                           ILI - Itaípu Logística Inteligênte | 03/2025 - 09/2025
                         </p>
                         <ul className="list-disc list-inside text-sm mt-2 text-muted-foreground">
-                          <li>Automação de processos com SQL e Python</li>
-                          <li>Coleta e tratamento de dados, garantindo a precisão e integridade</li>
+                          <li>Participação no desenvolvimento de software</li>
+                          <li>Auxílio no suporte e na realização de testes de software</li>
                           <li>Elaboração de dashboards e relatórios analíticos</li>
+                          <li>Criação de documentação técnica para sistemas e procedimentos</li>
                         </ul>
                       </div>
                       <div>
@@ -273,9 +274,7 @@ export default function Home() {
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                        Machine Learning
-                      </span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Machine Learning</span>
                     </div>
                   </div>
                   <Button asChild size="sm" className="w-full">
