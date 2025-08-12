@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Github, Mail, Linkedin } from "lucide-react"
@@ -7,12 +6,11 @@ import Image from "next/image"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
+  const [activeSection, setActiveSection] = useState("work")
 
   useEffect(() => {
     const handleScroll = () => {
-      // Incluído 'contact' na lista de seções
-      const sections = ["home", "about", "work", "contact"]
+      const sections = ["work", "experience", "about"]
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -50,31 +48,29 @@ export default function Home() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection("home")}
-              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "home" ? "text-primary" : "text-muted-foreground"}`}
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "about" ? "text-primary" : "text-muted-foreground"}`}
-            >
-              Sobre
-            </button>
-            <button
               onClick={() => scrollToSection("work")}
-              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "work" ? "text-primary" : "text-muted-foreground"}`}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                activeSection === "work" ? "text-primary" : "text-muted-foreground"
+              }`}
             >
               Projetos
             </button>
-            {/* Adicionado link para a nova seção de contato */}
             <button
-              onClick={() => scrollToSection("contact")}
-              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "contact" ? "text-primary" : "text-muted-foreground"}`}
+              onClick={() => scrollToSection("experience")}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                activeSection === "experience" ? "text-primary" : "text-muted-foreground"
+              }`}
             >
-              Contato
+              Experiência
             </button>
-            {/* Botão de Curriculo removido da navegação desktop */}
+            <button
+              onClick={() => scrollToSection("about")}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                activeSection === "about" ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Sobre mim
+            </button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -86,20 +82,15 @@ export default function Home() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute w-full bg-background border-b border-border py-4 px-4 flex flex-col space-y-4">
-            <button onClick={() => scrollToSection("home")} className="text-sm font-medium py-2 hover:text-primary">
-              Home
-            </button>
-            <button onClick={() => scrollToSection("about")} className="text-sm font-medium py-2 hover:text-primary">
-              Sobre
-            </button>
             <button onClick={() => scrollToSection("work")} className="text-sm font-medium py-2 hover:text-primary">
               Projetos
             </button>
-            {/* Adicionado link para a nova seção de contato no mobile */}
-            <button onClick={() => scrollToSection("contact")} className="text-sm font-medium py-2 hover:text-primary">
-              Contato
+            <button onClick={() => scrollToSection("experience")} className="text-sm font-medium py-2 hover:text-primary">
+              experiência
             </button>
-            {/* Botão de Curriculo removido da navegação mobile */}
+            <button onClick={() => scrollToSection("about")} className="text-sm font-medium py-2 hover:text-primary">
+              Sobre mim
+            </button>
           </div>
         )}
       </header>
@@ -118,90 +109,16 @@ export default function Home() {
                 soluções usando Python, SQL e Excel.
               </p>
               <div className="flex flex-wrap gap-4 pt-4 justify-center">
-                <Button onClick={() => scrollToSection("about")}>Saiba mais</Button>
-                <Button onClick={() => scrollToSection("work")}>Projetos</Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Sobre */}
-        <section id="about" className="py-20 bg-secondary/20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">Sobre mim</h2>
-
-              <div className="space-y-6">
-                <p className="text-lg text-muted-foreground max-w-2xl">
-                  Sou um estudante, com um forte interesse em transformar informações complexas em soluções tangíveis para o negócio. Atualmente, trabalho e aplico meus conhecimentos em projetos.
-                </p>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="gradient-border p-6 bg-card">
-                    <h3 className="text-xl font-semibold mb-4">Expreriência</h3>
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="font-medium">Estagiário de TI</h4>
-                        <p className="text-sm text-muted-foreground">
-                          ILI - Itaípu Logística Inteligênte | 03/2025 - 09/2025
-                        </p>
-                        <ul className="list-disc list-inside text-sm mt-2 text-muted-foreground">
-                          <li>Participação no desenvolvimento de software</li>
-                          <li>Auxílio no suporte e na realização de testes de software</li>
-                          <li>Elaboração de dashboards e relatórios analíticos</li>
-                          <li>Criação de documentação técnica para sistemas e procedimentos</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="font-medium">Desenvolvedor - Uniritter</h4>
-                        <p className="text-sm text-muted-foreground">
-                          Programa InovaRede | 08/2024 - 12/2024
-                        </p>
-                        <ul className="list-disc list-inside text-sm mt-2 text-muted-foreground">
-                          <li>Criação e manutenção de sistemas digitais que facilitam o acesso às pesquisas desenvolvidas</li>
-                          <li>Implementação de funcionalidades que promovem a interação entre alunos, professores e empresas.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="gradient-border p-6 bg-card">
-                    <h3 className="text-xl font-semibold mb-4">Skills e Formação</h3>
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="font-medium">Skills</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          Python, SQL, Git, Excel, Machine Learning, Análise de Dados, ETL
-                        </p>
-                      </div>
-                      <div>
-                        <h4 className="font-medium">Idiomas</h4>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          <li>Inglês - Avançado</li>
-                          <li>Espanhol - Avançado</li>
-                          <li>Português - Nativo</li>
-                        </p>
-                      </div>
-                      <div>
-                        <h4 className="font-medium">Formação</h4>
-                        <p className="text-sm text-muted-foreground">Ciência da Computação - Graduação</p>
-                        <p className="text-xs text-muted-foreground">Universidade Ritter dos Reis | 2022 - 2025</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex justify-center pt-6">
-                  <Button asChild>
-                    <a
-                      href="https://drive.google.com/file/d/1fFDzpS8RtaAf6Bj6goG7I3XrjRsRvxk8/view?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Download Curriculo Completo
-                    </a>
-                  </Button>
-                </div>
+                <Button asChild size="lg">
+                  <a
+                    href="https://drive.google.com/file/d/1fFDzpS8RtaAf6Bj6goG7I3XrjRsRvxk8/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Download className="mr-2 h-5 w-5" />
+                    Download Currículo
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -351,40 +268,124 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Nova Seção de Contato */}
-        <section id="contact" className="py-20 bg-secondary/20">
+        {/* Experiência */}
+        <section id="experience" className="py-20 bg-secondary/20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center space-y-6">
-              {/* Título alterado para corresponder ao estilo de "Meus Projetos" */}
-              <h2 className="text-3xl font-bold mb-4">Vamos Trabalhar Juntos</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Estou sempre em busca de novos desafios e oportunidades para aplicar minhas habilidades em ciência de
-                dados. Entre em contato para discutirmos como posso contribuir para o seu projeto!
-              </p>
-              <div className="inline-flex flex-wrap justify-center gap-4 pt-6">
-                <Button asChild>
-                  <a href="mailto:pedrohernandez1903@gmail.com">
-                    <Mail className="mr-2 h-4 w-4" />
-                    Enviar Email
-                  </a>
-                </Button>
-                <Button asChild variant="outline">
-                  <a href="https://github.com/pedrocobalquini" target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </a>
-                </Button>
-                <Button asChild variant="outline">
-                  <a href="https://www.linkedin.com/in/pedrocobalquini/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="mr-2 h-4 w-4" />
-                    LinkedIn
-                  </a>
-                </Button>
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold mb-4">Experiência Profissional</h2>
+                <p className="text-lg text-muted-foreground">Minha trajetória profissional na área de tecnologia.</p>
+              </div>
+
+              <div className="space-y-12">
+                {/* Experiência 1 */}
+                <div className="gradient-border p-8 bg-card">
+                  <div className="flex flex-col md:flex-row md:items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                        <Briefcase className="h-8 w-8 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                          <h3 className="text-2xl font-bold">Estagiário de TI</h3>
+                          <div className="flex items-center gap-2 text-muted-foreground mt-1">
+                            <MapPin className="h-4 w-4" />
+                            <span>ILI - Itaípu Logística Inteligente</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground mt-2 md:mt-0">
+                          <Calendar className="h-4 w-4" />
+                          <span>03/2025 - 09/2025</span>
+                        </div>
+                      </div>
+                      <ul className="text-muted-foreground space-y-2 leading-relaxed list-none">
+                        <li>Automação de processos utilizando SQL e Python</li>
+                        <li>Coleta e tratamento de dados, garantindo precisão e integridade</li>
+                        <li>Desenvolvimento de dashboards e relatórios analíticos</li>
+                        <li>Apoio na tomada de decisões estratégicas da empresa</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Experiência 2 */}
+                <div className="gradient-border p-8 bg-card">
+                  <div className="flex flex-col md:flex-row md:items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                        <GraduationCap className="h-8 w-8 text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                          <h3 className="text-2xl font-bold">Professor Voluntário</h3>
+                          <div className="flex items-center gap-2 text-muted-foreground mt-1">
+                            <MapPin className="h-4 w-4" />
+                            <span>Universidade Ritter dos Reis</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground mt-2 md:mt-0">
+                          <Calendar className="h-4 w-4" />
+                          <span>02/2024 - 07/2024</span>
+                        </div>
+                      </div>
+                      <ul className="text-muted-foreground space-y-2 leading-relaxed list-none">
+                        <li>Mentoria para estudantes universitários nas áreas de TI</li>
+                        <li>Conduzi oito aulas focadas em fluxogramas e POO</li>
+                        <li>Desenvolvimento de materiais didáticos e atividades práticas</li>
+                        <li>Orientação nos primeiros passos da programação em Python</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
+
+        {/* Sobre */}
+        <section id="about" className="py-20 bg-secondary/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">Sobre mim</h2>
+
+              <div className="space-y-6">
+                <p className="text-lg text-muted-foreground max-w-2xl">
+                  Sou um estudante, com um forte interesse em transformar informações complexas em soluções tangíveis para o negócio. Atualmente, trabalho e aplico meus conhecimentos em projetos.
+                </p>
+
+                  <div className="gradient-border p-6 bg-card">
+                    <h3 className="text-xl font-semibold mb-4">Skills e Formação</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-medium">Skills</h4>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Python, SQL, Git, Excel, Machine Learning, Análise de Dados, ETL
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Idiomas</h4>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          <li>Inglês - Avançado</li>
+                          <li>Espanhol - Avançado</li>
+                          <li>Português - Nativo</li>
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-medium">Formação</h4>
+                        <p className="text-sm text-muted-foreground">Ciência da Computação - Graduação</p>
+                        <p className="text-xs text-muted-foreground">Universidade Ritter dos Reis | 2022 - 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>         
 
       {/* Footer */}
       <footer className="py-6 border-t border-border">
@@ -393,10 +394,35 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Pedro Hernandez. All rights reserved.
             </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a
+                href="https://www.linkedin.com/pedrocobalquini"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://www.github.com/pedrocobalquini"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary"
+              >
+                GitHub
+              </a>
+              <a
+                href="mailto:pedrohernandez1903@gmail.com"
+                className="text-muted-foreground hover:text-primary"
+              >
+                Email
+              </a>
+            </div>
           </div>
         </div>
       </footer>
     </div>
   )
 }
+
 
