@@ -153,9 +153,9 @@ export default function Home() {
                         </ul>
                       </div>
                       <div>
-                        <h4 className="font-medium">Desenvolvedor</h4>
+                        <h4 className="font-medium">Desenvolvedor - Uniritter</h4>
                         <p className="text-sm text-muted-foreground">
-                          Universidade Ritter dos Reis | 02/2024 - 07/2024
+                          Programa InovaRede | 08/2024 - 12/2024
                         </p>
                         <ul className="list-disc list-inside text-sm mt-2 text-muted-foreground">
                           <li>Criação e manutenção de sistemas digitais que facilitam o acesso às pesquisas desenvolvidas</li>
@@ -399,3 +399,4 @@ export default function Home() {
     </div>
   )
 }
+
