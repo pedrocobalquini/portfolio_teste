@@ -131,7 +131,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">Sobre mim</h2>
 
-              <div className="space-y-6 text-center">
+              <div className="space-y-6">
                 <p className="text-lg text-muted-foreground max-w-2xl">
                   Sou um estudante, com um forte interesse em transformar informações complexas em soluções tangíveis para o negócio. Atualmente, trabalho e aplico meus conhecimentos em projetos.
                 </p>
