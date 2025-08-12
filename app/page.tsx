@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Github, Mail, Linkedin } from "lucide-react"
+import { Menu, X, Github, Download, Briefcase, MapPin, Calendar, GraduationCap } from "lucide-react"
 import Image from "next/image"
 
 export default function Home() {
@@ -41,7 +41,10 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <button onClick={() => scrollToSection("home")} className="text-xl font-bold gradient-text">
+          <button
+            onClick={() => scrollToSection("home")}
+            className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          >
             Pedro Hernandez
           </button>
 
@@ -85,7 +88,10 @@ export default function Home() {
             <button onClick={() => scrollToSection("work")} className="text-sm font-medium py-2 hover:text-primary">
               Projetos
             </button>
-            <button onClick={() => scrollToSection("experience")} className="text-sm font-medium py-2 hover:text-primary">
+            <button
+              onClick={() => scrollToSection("experience")}
+              className="text-sm font-medium py-2 hover:text-primary"
+            >
               experiência
             </button>
             <button onClick={() => scrollToSection("about")} className="text-sm font-medium py-2 hover:text-primary">
@@ -94,35 +100,6 @@ export default function Home() {
           </div>
         )}
       </header>
-
-      <main className="flex-1">
-        {/* Hero Section */}
-        <section id="home" className="py-20 md:py-32">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Olá, eu sou <span className="gradient-text">Pedro Hernandez</span>
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">Engenheiro de Dados</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl">
-                Sou estudante de Ciência da Computação com experiência na área de dados. Atuo no desenvolvimento de
-                soluções usando Python, SQL e Excel.
-              </p>
-              <div className="flex flex-wrap gap-4 pt-4 justify-center">
-                <Button asChild size="lg">
-                  <a
-                    href="https://drive.google.com/file/d/1fFDzpS8RtaAf6Bj6goG7I3XrjRsRvxk8/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Download className="mr-2 h-5 w-5" />
-                    Download Currículo
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Projetos */}
         <section id="work" className="py-20">
@@ -424,5 +401,6 @@ export default function Home() {
     </div>
   )
 }
+
 
 
