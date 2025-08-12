@@ -1,16 +1,18 @@
 "use client"
+
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Github, Download, Briefcase, MapPin, Calendar, GraduationCap } from "lucide-react"
+import { Menu, X, Github, Mail, Linkedin } from "lucide-react"
 import Image from "next/image"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("work")
+  const [activeSection, setActiveSection] = useState("home")
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["work", "experience", "about"]
+      // Incluído 'contact' na lista de seções
+      const sections = ["home", "about", "work", "contact"]
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -41,39 +43,38 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <button
-            onClick={() => scrollToSection("home")}
-            className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
-          >
+          <button onClick={() => scrollToSection("home")} className="text-xl font-bold gradient-text">
             Pedro Hernandez
           </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection("work")}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                activeSection === "work" ? "text-primary" : "text-muted-foreground"
-              }`}
+              onClick={() => scrollToSection("home")}
+              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "home" ? "text-primary" : "text-muted-foreground"}`}
             >
-              Projetos
-            </button>
-            <button
-              onClick={() => scrollToSection("experience")}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                activeSection === "experience" ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              Experiência
+              Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                activeSection === "about" ? "text-primary" : "text-muted-foreground"
-              }`}
+              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "about" ? "text-primary" : "text-muted-foreground"}`}
             >
-              Sobre mim
+              Sobre
             </button>
+            <button
+              onClick={() => scrollToSection("work")}
+              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "work" ? "text-primary" : "text-muted-foreground"}`}
+            >
+              Projetos
+            </button>
+            {/* Adicionado link para a nova seção de contato */}
+            <button
+              onClick={() => scrollToSection("contact")}
+              className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === "contact" ? "text-primary" : "text-muted-foreground"}`}
+            >
+              Contato
+            </button>
+            {/* Botão de Curriculo removido da navegação desktop */}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -85,21 +86,44 @@ export default function Home() {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute w-full bg-background border-b border-border py-4 px-4 flex flex-col space-y-4">
+            <button onClick={() => scrollToSection("home")} className="text-sm font-medium py-2 hover:text-primary">
+              Home
+            </button>
+            <button onClick={() => scrollToSection("about")} className="text-sm font-medium py-2 hover:text-primary">
+              Sobre
+            </button>
             <button onClick={() => scrollToSection("work")} className="text-sm font-medium py-2 hover:text-primary">
               Projetos
             </button>
-            <button
-              onClick={() => scrollToSection("experience")}
-              className="text-sm font-medium py-2 hover:text-primary"
-            >
-              experiência
+            {/* Adicionado link para a nova seção de contato no mobile */}
+            <button onClick={() => scrollToSection("contact")} className="text-sm font-medium py-2 hover:text-primary">
+              Contato
             </button>
-            <button onClick={() => scrollToSection("about")} className="text-sm font-medium py-2 hover:text-primary">
-              Sobre mim
-            </button>
+            {/* Botão de Curriculo removido da navegação mobile */}
           </div>
         )}
       </header>
+
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section id="home" className="py-20 md:py-32">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                Olá, eu sou <span className="gradient-text">Pedro Hernandez</span>
+              </h1>
+              <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">Engenheiro de Dados</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl">
+                Sou estudante de Ciência da Computação com experiência na área de dados. Atuo no desenvolvimento de
+                soluções usando Python, SQL e Excel.
+              </p>
+              <div className="flex flex-wrap gap-4 pt-4 justify-center">
+                <Button onClick={() => scrollToSection("about")}>Saiba mais</Button>
+                <Button onClick={() => scrollToSection("work")}>Projetos</Button>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Projetos */}
         <section id="work" className="py-20">
@@ -401,6 +425,7 @@ export default function Home() {
     </div>
   )
 }
+
 
 
 
