@@ -150,7 +150,6 @@ export default function Home() {
                     </div>
                     <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         Machine Learning
                       </span>
@@ -187,7 +186,6 @@ export default function Home() {
                     </div>
                     <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         Machine Learning
                       </span>
@@ -329,7 +327,7 @@ export default function Home() {
                 <div className="bg-card rounded-lg p-6">
                   <div className="mb-4">
                     <h3 className="text-2xl font-bold text-foreground mb-2">Desenvolvedor</h3>
-                    <h4 className="text-xl font-semibold text-primary mb-2">UnovaRede - Uniritter</h4>
+                    <h4 className="text-xl font-semibold text-primary mb-2">Inovarede - Uniritter</h4>
                     <p className="text-muted-foreground">Ago 2024 — Dez 2024</p>
                   </div>
 
