@@ -148,7 +148,6 @@ export default function Home() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         Machine Learning
                       </span>
@@ -183,7 +182,6 @@ export default function Home() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         Machine Learning
                       </span>
@@ -291,9 +289,7 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Automatizei processos críticos utilizando SQL e Python, resultando em uma redução de 60% no
-                        tempo de processamento de dados e eliminação de 95% dos erros manuais. Isso melhorou
-                        significativamente a eficiência operacional e a confiabilidade dos relatórios.
+                        Participação no desenvolvimento de software, auxílio no suporte e na realização de testes voltados para a aplicação.
                       </p>
                     </div>
 
@@ -303,8 +299,7 @@ export default function Home() {
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
                         Desenvolvi dashboards interativos e relatórios analíticos que forneceram insights estratégicos
-                        para a tomada de decisões, contribuindo para um aumento de 25% na eficiência dos processos
-                        logísticos da empresa.
+                        para a tomada de decisões.
                       </p>
                     </div>
 
@@ -314,8 +309,7 @@ export default function Home() {
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
                         Implementei soluções de coleta e tratamento de dados que garantiram 99.8% de precisão e
-                        integridade, estabelecendo novos padrões de qualidade para os dados corporativos e reduzindo
-                        retrabalho em 40%.
+                        integridade, estabelecendo novos padrões de qualidade.
                       </p>
                     </div>
                   </div>
@@ -324,9 +318,9 @@ export default function Home() {
                 {/* Experiência 2 */}
                 <div className="bg-card rounded-lg p-6">
                   <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">Universidade Ritter dos Reis</h3>
-                    <h4 className="text-xl font-semibold text-primary mb-2">Professor Voluntário</h4>
-                    <p className="text-muted-foreground">Fev 2024 — Jul 2024</p>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">UnivaRede - Uniritter</h3>
+                    <h4 className="text-xl font-semibold text-primary mb-2">Desenvolvedor</h4>
+                    <p className="text-muted-foreground">Ago 2024 — Dez 2024</p>
                   </div>
 
                   <div className="space-y-4">
@@ -335,9 +329,7 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Conduzi 8 aulas especializadas em fluxogramas e Programação Orientada a Objetos para 45+
-                        estudantes universitários, alcançando uma taxa de aprovação de 92% e feedback positivo de 98%
-                        dos alunos.
+                        Implementação de funcionalidades que promovem a interação entre alunos, professores e empresas.
                       </p>
                     </div>
 
@@ -346,9 +338,7 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Desenvolvi materiais didáticos inovadores e atividades práticas em Python que melhoraram a
-                        compreensão dos conceitos em 35%, estabelecendo uma base sólida para os primeiros passos na
-                        programação.
+                        Criação e manutenção de sistemas digitais que facilitam o acesso às pesquisas desenvolvidas.
                       </p>
                     </div>
 
@@ -357,9 +347,7 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Ofereci mentoria personalizada que resultou em 80% dos estudantes conseguindo estágios na área
-                        de TI dentro de 6 meses após o término do programa, demonstrando o impacto direto do ensino na
-                        carreira dos alunos.
+                        Coleta e extração de dados de múltiplas fontes, garantindo sua preparação e disponibilidade para suportar análises, relatórios e aplicações de negócio.
                       </p>
                     </div>
                   </div>
@@ -379,12 +367,10 @@ export default function Home() {
 
               <div className="max-w-3xl mx-auto">
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Atualmente cursando Ciência da Computação na Universidade Ritter dos Reis (2022-2025), tenho me
-                  especializado na área de dados com foco em automação de processos e análise. Domino Python e SQL para
-                  desenvolvimento de soluções, além de ferramentas como Excel, Jupyter e Git. Minha experiência inclui
-                  Machine Learning, ETL e criação de dashboards analíticos. Sou fluente em português (nativo), inglês e
-                  espanhol (ambos avançados), o que me permite trabalhar em ambientes multiculturais e acessar
-                  documentação técnica internacional.
+                  Atualmente cursando Ciência da Computação na Universidade Ritter dos Reis, tenho me
+                  especializado na área de dados com foco em engenharia de dados. Domino Python e SQL para
+                  desenvolvimento de soluções, além de ferramentas como Excel, Git e Machine Learning. Tenho nível avançado em inglês e espanhol, o que me permite atuar em 
+                  ambientes multiculturais e acessar com facilidade documentação técnica internacional.
                 </p>
               </div>
             </div>
