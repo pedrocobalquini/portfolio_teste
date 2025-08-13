@@ -7,12 +7,14 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Pedro Hernandez | Engenheiro de dados",
+  title: "Pedro Hernandez | Desenvolvedor",
   description: "Portfolio de Pedro Hernandez",
   icons: {
     icon: "/favicon.ico",
   },
+    generator: 'v0.app'
 }
+
 export default function RootLayout({
   children,
 }: Readonly<{
