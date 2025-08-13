@@ -132,8 +132,8 @@ export default function Home() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Projeto 1 */}
-                <div className="gradient-border p-6 bg-card">
-                  <div className="mb-4">
+                <div className="gradient-border p-6 bg-card h-full flex flex-col">
+                  <div className="flex-1">
                     <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://www.mixvale.com.br/wp-content/uploads/2025/05/abono-salarial-.jpg.avif"
@@ -143,17 +143,20 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Prevendo Fraudes</h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      O projeto utiliza Machine Learning para prever se uma conta vai ficar cometer uma fraude ou não.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="h-16 mb-4">
+                      <p className="text-muted-foreground text-sm line-clamp-3">
+                        O projeto utiliza Machine Learning para prever se uma conta vai cometer uma fraude ou não.
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         Machine Learning
                       </span>
                     </div>
                   </div>
-                  <Button asChild size="sm" className="w-full">
+                  <Button asChild size="sm" className="w-full mt-auto">
                     <a
                       href="https://github.com/pedrocobalquini/Prevendo-Fraudes-ML"
                       target="_blank"
@@ -166,8 +169,8 @@ export default function Home() {
                 </div>
 
                 {/* Projeto 2 */}
-                <div className="gradient-border p-6 bg-card">
-                  <div className="mb-4">
+                <div className="gradient-border p-6 bg-card h-full flex flex-col">
+                  <div className="flex-1">
                     <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://formacaohist.com.br/wp-content/uploads/2021/06/555.jpg"
@@ -177,17 +180,20 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Prevendo o desempenho dos alunos</h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      O projeto desenvolvido visa prever o desempenho dos alunos com Machine Learning.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="h-16 mb-4">
+                      <p className="text-muted-foreground text-sm line-clamp-3">
+                        O projeto desenvolvido visa prever o desempenho dos alunos com Machine Learning.
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Jupyter</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         Machine Learning
                       </span>
                     </div>
                   </div>
-                  <Button asChild size="sm" className="w-full">
+                  <Button asChild size="sm" className="w-full mt-auto">
                     <a
                       href="https://github.com/pedrocobalquini/Prevendo-o-desempenho-dos-alunos"
                       target="_blank"
@@ -200,8 +206,8 @@ export default function Home() {
                 </div>
 
                 {/* Projeto 3 */}
-                <div className="gradient-border p-6 bg-card">
-                  <div className="mb-4">
+                <div className="gradient-border p-6 bg-card h-full flex flex-col">
+                  <div className="flex-1">
                     <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://estruturadinamica.com.br/wp-content/uploads/2023/07/iStock-545082074-1000x400-1.jpg"
@@ -211,15 +217,17 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Custo Médico</h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      Análise sobre os custos médicos relacionados a doenças causadas pelo tabagismo.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="h-16 mb-4">
+                      <p className="text-muted-foreground text-sm line-clamp-3">
+                        Análise sobre os custos médicos relacionados a doenças causadas pelo tabagismo.
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Excel</span>
                     </div>
                   </div>
-                  <Button asChild size="sm" className="w-full">
+                  <Button asChild size="sm" className="w-full mt-auto">
                     <a href="https://github.com/pedrocobalquini/Custo-Medico" target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       Ver no GitHub
@@ -228,8 +236,8 @@ export default function Home() {
                 </div>
 
                 {/* Projeto 4 */}
-                <div className="gradient-border p-6 bg-card">
-                  <div className="mb-4">
+                <div className="gradient-border p-6 bg-card h-full flex flex-col">
+                  <div className="flex-1">
                     <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://leads2b.com/blog/wp-content/uploads/2021/03/blog_segmentacao-de-cliente-768x384.jpg"
@@ -239,17 +247,19 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Divisão de clientes</h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      Projeto de machine learning para separar grupos de clientes por meio de clusters com o K-means.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="h-16 mb-4">
+                      <p className="text-muted-foreground text-sm line-clamp-3">
+                        Projeto de machine learning para separar grupos de clientes por meio de clusters com o K-means.
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         Machine Learning
                       </span>
                     </div>
                   </div>
-                  <Button asChild size="sm" className="w-full">
+                  <Button asChild size="sm" className="w-full mt-auto">
                     <a
                       href="https://github.com/pedrocobalquini/Divis-o-de-clientes"
                       target="_blank"
