@@ -288,8 +288,8 @@ export default function Home() {
                 {/* Experiência 1 */}
                 <div className="bg-card rounded-lg p-6">
                   <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">ILI - Itaípu Logística Inteligente</h3>
-                    <h4 className="text-xl font-semibold text-primary mb-2">Estagiário de TI</h4>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">Estagiário de TI</h3>
+                    <h4 className="text-xl font-semibold text-primary mb-2">ILI - Itaípu Logística Inteligente</h4>
                     <p className="text-muted-foreground">Mar 2025 — Set 2025</p>
                   </div>
 
@@ -328,8 +328,8 @@ export default function Home() {
                 {/* Experiência 2 */}
                 <div className="bg-card rounded-lg p-6">
                   <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">UnivaRede - Uniritter</h3>
-                    <h4 className="text-xl font-semibold text-primary mb-2">Desenvolvedor</h4>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">Desenvolvedor</h3>
+                    <h4 className="text-xl font-semibold text-primary mb-2">UnovaRede - Uniritter</h4>
                     <p className="text-muted-foreground">Ago 2024 — Dez 2024</p>
                   </div>
 
