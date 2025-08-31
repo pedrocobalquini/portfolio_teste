@@ -104,7 +104,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">Desenvolvedor back-end</h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
                 Atuei como desenvolvedor backend, onde aperfeiçoei minhas habilidades em Java, utilizando frameworks como Spring e Hibernate. Recentemente, 
-                contribuí para a construção de APIs, participando das etapas de desenvolvimento. Possuo conhecimentos em Java, Spring, Hibernate, bancos de dados SQL e NoSQL.
+                contribuí para a construção de APIs, participando das etapas de desenvolvimento.
               </p>
               <div className="flex flex-wrap gap-4 pt-4 justify-center">
                 <Button asChild>
