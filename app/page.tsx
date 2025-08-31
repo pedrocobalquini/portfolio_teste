@@ -164,7 +164,10 @@ export default function Home() {
                     </a>
                   </Button>
                 </div>
-
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Experiência */}
         <section id="experience" className="py-20">
           <div className="container mx-auto px-4">
