@@ -261,12 +261,10 @@ export default function Home() {
                   Atualmente cursando Ciência da Computação no Centro Universitário Ritter dos Reis, tenho me
                   especializado principalmente no desenvolvimento em Java, com seus frameworks e bibliotecas. Fora Java, 
                   utilizo Python e SQL para desenvolvimento de soluções, além de bancos de dados relacionais e NoSQL. 
-                </p>
-                <p className="text-muted-foreground leading-relaxed text-lg">
+
                   Tenho nível avançado em inglês e espanhol, o que me permite atuar em 
                   ambientes multiculturais e acessar com facilidade documentação técnica internacional.
                 </p>
-                
               </div>
             </div>
           </div>
