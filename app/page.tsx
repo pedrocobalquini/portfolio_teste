@@ -104,7 +104,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">Desenvolvedor back-end</h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
                 Atuei como desenvolvedor backend, onde aperfeiçoei minhas habilidades em Java, utilizando frameworks como Spring e Hibernate. Recentemente, 
-                contribuí para a construção de APIs, participando das etapas de desenvolvimento. Possuo conhecimentos em Java, Spring, Hibernate, bancos de dados SQL e NoSQL.
+                contribuí para a construção de APIs, participando das etapas de desenvolvimento.
               </p>
               <div className="flex flex-wrap gap-4 pt-4 justify-center">
                 <Button asChild>
@@ -164,7 +164,10 @@ export default function Home() {
                     </a>
                   </Button>
                 </div>
-
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Experiência */}
         <section id="experience" className="py-20">
           <div className="container mx-auto px-4">
@@ -261,12 +264,10 @@ export default function Home() {
                   Atualmente cursando Ciência da Computação no Centro Universitário Ritter dos Reis, tenho me
                   especializado principalmente no desenvolvimento em Java, com seus frameworks e bibliotecas. Fora Java, 
                   utilizo Python e SQL para desenvolvimento de soluções, além de bancos de dados relacionais e NoSQL. 
-                </p>
-                <p className="text-muted-foreground leading-relaxed text-lg">
+
                   Tenho nível avançado em inglês e espanhol, o que me permite atuar em 
                   ambientes multiculturais e acessar com facilidade documentação técnica internacional.
                 </p>
-                
               </div>
             </div>
           </div>
