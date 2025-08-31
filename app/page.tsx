@@ -101,10 +101,10 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Olá, eu sou <span className="gradient-text">Pedro Hernandez</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">Engenheiro de Dados</h2>
+              <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">Desenvolvedor back-end</h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Sou estudante de Ciência da Computação com experiência na área de dados. Atuo no desenvolvimento de
-                soluções usando Python, SQL e Excel.
+                Atuei como desenvolvedor backend, onde aperfeiçoei minhas habilidades em Java, utilizando frameworks como Spring e Hibernate. Recentemente, 
+                contribuí para a construção de APIs, participando das etapas de desenvolvimento. Possuo conhecimentos em Java, Spring, Hibernate, bancos de dados SQL e NoSQL.
               </p>
               <div className="flex flex-wrap gap-4 pt-4 justify-center">
                 <Button asChild>
@@ -150,9 +150,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                        Machine Learning
-                      </span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Machine Learning</span>
                     </div>
                   </div>
                   <Button asChild size="sm" className="w-full mt-auto">
@@ -166,112 +164,6 @@ export default function Home() {
                     </a>
                   </Button>
                 </div>
-
-                {/* Projeto 2 */}
-                <div className="gradient-border p-6 bg-card h-full flex flex-col">
-                  <div className="flex-1">
-                    <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
-                      <Image
-                        src="https://formacaohist.com.br/wp-content/uploads/2021/06/555.jpg"
-                        alt="Prevendo o desempenho dos alunos"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">Prevendo o desempenho dos alunos</h3>
-                    <div className="h-16 mb-4">
-                      <p className="text-muted-foreground text-sm line-clamp-3">
-                        O projeto desenvolvido visa prever o desempenho dos alunos com Machine Learning.
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                        Machine Learning
-                      </span>
-                    </div>
-                  </div>
-                  <Button asChild size="sm" className="w-full mt-auto">
-                    <a
-                      href="https://github.com/pedrocobalquini/Prevendo-o-desempenho-dos-alunos"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="mr-2 h-4 w-4" />
-                      Ver no GitHub
-                    </a>
-                  </Button>
-                </div>
-
-                {/* Projeto 3 */}
-                <div className="gradient-border p-6 bg-card h-full flex flex-col">
-                  <div className="flex-1">
-                    <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
-                      <Image
-                        src="https://estruturadinamica.com.br/wp-content/uploads/2023/07/iStock-545082074-1000x400-1.jpg"
-                        alt="Custo Médico"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">Custo Médico</h3>
-                    <div className="h-16 mb-4">
-                      <p className="text-muted-foreground text-sm line-clamp-3">
-                        Análise sobre os custos médicos relacionados a doenças causadas pelo tabagismo.
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Excel</span>
-                    </div>
-                  </div>
-                  <Button asChild size="sm" className="w-full mt-auto">
-                    <a href="https://github.com/pedrocobalquini/Custo-Medico" target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      Ver no GitHub
-                    </a>
-                  </Button>
-                </div>
-
-                {/* Projeto 4 */}
-                <div className="gradient-border p-6 bg-card h-full flex flex-col">
-                  <div className="flex-1">
-                    <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
-                      <Image
-                        src="https://leads2b.com/blog/wp-content/uploads/2021/03/blog_segmentacao-de-cliente-768x384.jpg"
-                        alt="Divisão de clientes"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">Divisão de clientes</h3>
-                    <div className="h-16 mb-4">
-                      <p className="text-muted-foreground text-sm line-clamp-3">
-                        Projeto de machine learning para separar grupos de clientes por meio de clusters com o K-means.
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap gap-2 mb-4 min-h-[2rem]">
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                      <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                        Machine Learning
-                      </span>
-                    </div>
-                  </div>
-                  <Button asChild size="sm" className="w-full mt-auto">
-                    <a
-                      href="https://github.com/pedrocobalquini/Divis-o-de-clientes"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="mr-2 h-4 w-4" />
-                      Ver no GitHub
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Experiência */}
         <section id="experience" className="py-20">
@@ -297,7 +189,7 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Participação no desenvolvimento de software, auxílio no suporte e na realização de testes voltados para a aplicação.
+                        Auxiliei no desenvolvimento do sistema de cadastro dos motoristas utilizando principalmente Spring e Angular.
                       </p>
                     </div>
 
@@ -306,8 +198,7 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Desenvolvi dashboards interativos e relatórios analíticos que forneceram insights estratégicos
-                        para a tomada de decisões.
+                        Auxiliei na criação da API utilizada no projeto para cadastro dos motoristas.
                       </p>
                     </div>
 
@@ -316,8 +207,7 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Implementei soluções de coleta e tratamento de dados que garantiram 99.8% de precisão e
-                        integridade, estabelecendo novos padrões de qualidade.
+                        Utilizei AWS para o serviço em nuvem, junto com Postgresql para armazenar os dados e Docker para conteinerização.
                       </p>
                     </div>
                   </div>
@@ -337,7 +227,8 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Implementação de funcionalidades que promovem a interação entre alunos, professores e empresas.
+                        Um projeto de extensão dentro da faculdade em que auxiliei no desenvolvimento de implementações de 
+                        funcionalidades que promovem a interação entre alunos, professores e empresas utilizando FastAPI.
                       </p>
                     </div>
 
@@ -346,16 +237,8 @@ export default function Home() {
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Criação e manutenção de sistemas digitais que facilitam o acesso às pesquisas desenvolvidas.
-                      </p>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center mt-0.5 flex-shrink-0">
-                        <div className="w-2 h-2 rounded-full bg-primary"></div>
-                      </div>
-                      <p className="text-muted-foreground leading-relaxed">
-                        Coleta e extração de dados de múltiplas fontes, garantindo sua preparação e disponibilidade para suportar análises, relatórios e aplicações de negócio.
+                        Coleta e extração de dados utilizando Python e SQL de múltiplas fontes, garantindo sua preparação e 
+                        disponibilidade para suportar análises, relatórios e aplicações de negócio.
                       </p>
                     </div>
                   </div>
@@ -375,11 +258,15 @@ export default function Home() {
 
               <div className="max-w-3xl mx-auto">
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Atualmente cursando Ciência da Computação na Universidade Ritter dos Reis, tenho me
-                  especializado na área de dados com foco em engenharia de dados. Domino Python e SQL para
-                  desenvolvimento de soluções, além de ferramentas como Excel, Git e Machine Learning. Tenho nível avançado em inglês e espanhol, o que me permite atuar em 
+                  Atualmente cursando Ciência da Computação no Centro Universitário Ritter dos Reis, tenho me
+                  especializado principalmente no desenvolvimento em Java, com seus frameworks e bibliotecas. Fora Java, 
+                  utilizo Python e SQL para desenvolvimento de soluções, além de bancos de dados relacionais e NoSQL. 
+                </p>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  Tenho nível avançado em inglês e espanhol, o que me permite atuar em 
                   ambientes multiculturais e acessar com facilidade documentação técnica internacional.
                 </p>
+                
               </div>
             </div>
           </div>
