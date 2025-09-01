@@ -262,9 +262,10 @@ export default function Home() {
               <div className="max-w-3xl mx-auto">
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   Atualmente cursando Ciência da Computação no Centro Universitário Ritter dos Reis, tenho me
-                  especializado principalmente no desenvolvimento em Java, com seus frameworks e bibliotecas. Fora Java, 
-                  utilizo Python e SQL para desenvolvimento de soluções, além de bancos de dados relacionais e NoSQL. 
+                  especializado principalmente no desenvolvimento em Java, com seus frameworks e bibliotecas. Utilizo Python e 
+                  SQL para desenvolvimento de soluções, além de bancos de dados relacionais e NoSQL. 
                 </p>
+                
                 <p className="text-muted-foreground leading-relaxed text-lg">
                 Tenho nível avançado em inglês e espanhol, o que me permite atuar em 
                 ambientes multiculturais e acessar com facilidade documentação técnica internacional.
